@@ -1,0 +1,27 @@
+header{
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 1px;
+	font-family: verdana;
+}
+
+section{
+	font-family: verdana;
+	background: #34495e;
+	padding: 10px;
+}
+
+.contuner{
+	border: 10px solid goldenrod;
+}
+
+body{
+	margin: 0px;
+  background-color: #f1f1f1;
+}
+
+h2{
+	font-size: 1.17em;
+	margin: 19px;
+}
