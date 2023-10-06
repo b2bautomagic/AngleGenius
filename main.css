@@ -26,3 +26,8 @@ h2{
 	font-size: 1.17em;
 	margin: 19px;
 }
+
+button{
+	font-weight: bold;
+	text-decoration: underline;
+}
