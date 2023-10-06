@@ -1,0 +1,9 @@
+.step {
+    display: none;
+}
+.step.active {
+    display: block;
+}
+.step-buttons {
+    margin-top: 20px;
+}
