@@ -1,135 +1,160 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="logic.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome aboard! Just answer a few questions to grow your business.</h1>
-	<h2>The results our system produces are only as good as the information you provide</h2>
-    </header>
-		
-    <form action="#">
 
-        <div id="step1" class="step active">
-            <h3>Contact Info</h3>
+    <div class="skin">
+        <header>
+            <h1>Just answer a few questions to grow your business.</h1>
+            <p>The results our system produces are only as good as the information you provide</p>
+            <h2>Welcome aboard!</h2>
+        </header>
 
-            <p><input placeholder="Your first name" type="text"></input></p>
-		    <p><input placeholder="Your last name" type="text"></input></p>
-		    <p><input placeholder="Company name" type="text"></input></p>
-		    <p><input placeholder="Company website" type="text"></input></p>
-		    <p><input placeholder="Your email" type="text"></input></p>
-            
-		    <progress max="100" value="16.6"></progress>
+        <form action="#">
 
-            <div class="step-buttons">
-                <button type="button" onclick="nextStep(2)">Next</button>
+            <div id="step1" class="step active">
+
+                <h3>Contact Info</h3>
+
+                <section class="fields">
+                    <p><input placeholder="Your first name" type="text"></input></p>
+                    <p><input placeholder="Your last name" type="text"></input></p>
+                    <p><input placeholder="Company name" type="text"></input></p>
+                    <p><input placeholder="Company website" type="text"></input></p>
+                    <p><input placeholder="Your email" type="text"></input></p>
+                </section>
+
+                <div class="step-buttons">
+                    <button type="button" onclick="nextStep(2)">Next</button>
+                </div>
+
+                <progress max="100" value="16.6"></progress>
+
             </div>
 
-        </div>
+            <div id="step2" class="step">
+                <h3>Ideal Client Profile</h3>
 
-        <div id="step2" class="step">
-            <h3>Ideal Client Profile</h3>
+                <section class="fields">
+                    <p class="question">Who is your ideal client? (tell us as much about them as you can)</p>
+                    <textarea></textarea>
+                    <p class="question">What are the pain points people are facing in their business or personal lives to motivate them to buy?</p>
+                    <textarea></textarea>
+                    <p class="question">Where are they located? (Only if specific to certain states/countries)</p>
+                    <textarea></textarea>
+                    <p class="question">What major problem does your target market have that your product/service solves for them?</p>
+                    <textarea></textarea>
+                    <p class="question">list 10 of your dream clients (companies you'd like to target)</p>
+                    <textarea></textarea>
+                </section>
 
-            <p class="question">Who is your ideal client? (tell us as much about them as you can)</p>
-		    <p><textarea rows="4" cols="75"></textarea></p>
-		    <p class="question">What are the pain points people are facing in their business or personal lives to motivate them to buy?</p>
-		    <p><textarea rows="4" cols="75"></textarea></p>
-		    <p class="question">Where are they located? (Only if specific to certain states/countries)</p>
-		    <p><textarea rows="4" cols="75"></textarea></p>
-		    <p class="question">What major problem does your target market have that your product/service solves for them?</p>
-		    <p><textarea rows="4" cols="75"></textarea></p>
-		    <p class="question">list 10 of your dream clients (companies you'd like to target)</p>
-		    <p><textarea rows="4" cols="75"></textarea></p>
+                <div class="step-buttons">
+                    <button type="button" onclick="nextStep(1)">Previous</button>
+                    <button type="button" onclick="nextStep(3)">Next</button>
+                </div>
 
-		    <progress max="100" value="33.26"></progress>
+                <progress max="100" value="33.26"></progress>
 
-            <div class="step-buttons">
-                <button type="button" onclick="nextStep(1)">Previous</button>
-                <button type="button" onclick="nextStep(3)">Next</button>
             </div>
 
-        </div>
+            <!-- Additional Steps -->
+            <div id="step3" class="step">
+                <h3>Offer</h3>
 
-        <!-- Additional Steps -->
-        <div id="step3" class="step">
-            <h3>Offer</h3>
+                <section class="fields">
+                    <p class="question">What is your solution to your target market's problem? (What it's called and how it works)</p>
+                    <p><textarea rows="4" cols="75"></textarea></p>
+                    <p class="question">Is there something special or unique about the problem you solve or how you solve it? (explain in detail)</p>
+                    <p><textarea rows="4" cols="75"></textarea></p>
+                    <p class="question">Is there some unnecessary/unwanted element or cumbersome feature that your competitor's product contains that your's doesn't?</p>
+                    <p><textarea></textarea></p>
+                    <p class="question">Is there a specific time frame that you could deliver a result in that could strengthen your message? (ex: get a 2x boost in sales meetings per rep within 6 weeks)</p>
+                    <p><textarea></textarea></p>
+                    <p class="question">Do you offer any guarantees? If so, what are they?</p>
+                    <p><textarea></textarea></p>
+                </section>
 
-            <p class="question">What is your solution to your target market's problem? (What it's called and how it works)</p>
-            <p><textarea rows="4" cols="75"></textarea></p>
-            <p class="question">Is there something special or unique about the problem you solve or how you solve it? (explain in detail)</p>
-            <p><textarea rows="4" cols="75"></textarea></p>
-            <p class="question">Is there some unnecessary/unwanted element or cumbersome feature that your competitor's product contains that your's doesn't?</p>
-            <p><textarea rows="4" cols="75"></textarea></p>
-            <p class="question">Is there a specific time frame that you could deliver a result in that could strengthen your message? (ex: get a 2x boost in sales meetings per rep within 6 weeks)</p>
-            <p><textarea rows="4" cols="75"></textarea></p>
-            <p class="question">Do you offer any guarantees? If so, what are they?</p>
-            <p><textarea rows="4" cols="75"></textarea></p>
-            <progress max="100" value="49.92"></progress>
-            
-            <div class="step-buttons">
-                <button type="button" onclick="nextStep(2)">Previous</button>
-                <button type="button" onclick="nextStep(4)">Next</button>
+                <div class="step-buttons">
+                    <button type="button" onclick="nextStep(2)">Previous</button>
+                    <button type="button" onclick="nextStep(4)">Next</button>
+                </div>
+
+                <progress max="100" value="49.92"></progress>
+
             </div>
 
-        </div>
+            <div id="step4" class="step">
+                <h3>Track Record</h3>
 
-        <div id="step4" class="step">
-            <h3>Track Record</h3>
+                <section class="fields">
+                    <p class="question">Have you worked with any noteworthy organizations, companies or individuals? List here</p>
+                    <p><textarea></textarea></p>
+                    <p class="question">Is there an outstanding result or case study that you got from a customer that can be shared? provide a link if possible</p>
+                    <p><textarea></textarea></p>
+                    <p class="question">What are your most impressive statistics (Ex: we helped X person or company achieve Y in Z time)</p>
+                    <p><textarea></textarea></p>
+                    <p class="question">Do you have a track record that sets you apart from others? (Ex: length of time in business, results for customers, specialize in specific vertical)</p>
+                    <p><textarea></textarea></p>
+                    <p class="question">How many customers have you served over time? (Ex: we've helped 500 people/companies over the last 5 years to get X result)</p>
+                    <p><textarea></textarea></p>
+                </section>
 
-            <p class="question">Have you worked with any noteworthy organizations, companies or individuals? List here</p>
-            <p><textarea rows="4" cols="75"></textarea></p>
-            <p class="question">Is there an outstanding result or case study that you got from a customer that can be shared? provide a link if possible</p>
-            <p><textarea rows="4" cols="75"></textarea></p>	
-            <p class="question">What are your most impressive statistics (Ex: we helped X person or company achieve Y in Z time)</p>
-            <p><textarea rows="4" cols="75"></textarea></p>
-            <p class="question">Do you have a track record that sets you apart from others? (Ex: length of time in business, results for customers, specialize in specific vertical)</p>
-            <p><textarea rows="4" cols="75"></textarea></p>
-            <p class="question">How many customers have you served over time? (Ex: we've helped 500 people/companies over the last 5 years to get X result)</p>
-            <p><textarea rows="4" cols="75"></textarea></p>
-            <progress max="100" value="66.58"></progress>
+                <div class="step-buttons">
+                    <button type="button" onclick="nextStep(3)">Previous</button>
+                    <button type="button" onclick="nextStep(5)">Next</button>
+                </div>
 
-            <div class="step-buttons">
-                <button type="button" onclick="nextStep(3)">Previous</button>
-                <button type="button" onclick="nextStep(5)">Next</button>
+                <progress max="100" value="66.58"></progress>
+
             </div>
 
-        </div>
+            <div id="step5" class="step">
+                <h3>Background Material</h3>
 
-        <div id="step5" class="step">
-            <h3>Background Material</h3>
-            
-            <p class="question">Do you have any useful content for your market? (ex: whitepapers, articles, offers, lead magnets, etc.) - paste links here</p>
-            <p><textarea rows="4" cols="75"></textarea></p>
-            <p class="question">Anything else we should know about your product or ideal customer?</p>
-            <p><textarea rows="4" cols="75"></textarea></p>
-            <progress max="100" value="83.246"></progress>
+                <section class="fields">
+                    <p class="question">Do you have any useful content for your market? (ex: whitepapers, articles, offers, lead magnets, etc.) - paste links here</p>
+                    <p><textarea></textarea></p>
+                    <p class="question">Anything else we should know about your product or ideal customer?</p>
+                    <p><textarea></textarea></p>
+                </section>
 
-            <div class="step-buttons">
-                <button type="button" onclick="nextStep(4)">Previous</button>
-                <button type="button" onclick="nextStep(6)">Next</button>
-            </div>
-        </div>
+                <div class="step-buttons">
+                    <button type="button" onclick="nextStep(4)">Previous</button>
+                    <button type="button" onclick="nextStep(6)">Next</button>
+                </div>
 
-        <!-- New Step -->
-        <div id="step6" class="step">
-            <h3>Finishing Up</h3>
-            
-            I agree to let AngleGenius make the required changes to my company's messaging in order to create effective angles and campaigns.
-
-            <p><input type="checkbox">Yes I agree</input></p>
-            
-            <progress max="100" value="100"></progress>
-
-            <div class="step-buttons">
-                <button type="button" onclick="nextStep(5)">Previous</button>
-                <input type="submit" value="Submit">
+                <progress max="100" value="83.246"></progress>
             </div>
 
-        </div>
+            <!-- New Step -->
+            <div id="step6" class="step">
+                <h3>Finishing Up</h3>
 
-    </form>
+                <section class="fields">
+                    I agree to let AngleGenius make the required changes to my company's messaging in order to create effective angles and campaigns.
+
+                    <p><input type="checkbox">Yes I agree</input></p>
+                </section>
+
+                <div class="step-buttons">
+                    <button type="button" onclick="nextStep(5)">Previous</button>
+                    <input type="submit" value="Submit">
+                </div>
+
+                <progress max="100" value="100"></progress>
+
+            </div>
+
+        </form>
+
+        <footer>copyright &copy AngleGenius 2023</footer>
+
+    </div>
+
 
 </body>
 </html>

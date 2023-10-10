@@ -7,3 +7,86 @@
 .step-buttons {
     margin-top: 20px;
 }
+
+header {
+    text-align: center;
+    /*background-color: #000000;*/
+    color: #f5f5f7;
+    font-family: verdana;
+}
+
+h3{
+    text-align: center;
+}
+
+section {
+    font-family: verdana;
+    background: #f5f5f7;
+    padding: 10px;
+    color: #161617e0;
+}
+
+textarea,input{
+    width: 35%;
+    /*padding: 8px 10px;*/
+    border-radius: 5px;
+    border: 1.2px solid #c4cae0;
+    /*margin-top: 5px;*/
+}
+
+textarea{
+    resize: none;
+}
+
+body{
+    margin: 0px;
+    background: linear-gradient(
+            135deg,
+            #6f6df4,
+            #4c46f5
+    );
+}
+
+p{
+    /*position: relative;*/
+    margin: auto;
+    width: 100%;
+}
+
+form{
+    align-self: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0,0,0,0.15);
+    width: 80%;
+    /*position: relative;
+    margin: 30px auto 0 auto;*/
+}
+
+.skin{
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /*position: absolute;
+    left: 10%;
+    top: 30%;*/
+
+}
+
+footer {
+    text-align:center;
+    margin-top: auto;
+}
+
+/*{
+    box-sizing: border-box;
+}*/
+
+/*textarea:focus,
+input:focus{
+    outline: none;
+    border-color: #6f6df4;
+}
+
+ */
