@@ -6,6 +6,12 @@
 }
 .step-buttons {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
 }
 
 header {
@@ -28,10 +34,10 @@ section {
 
 textarea,input{
     width: 35%;
-    /*padding: 8px 10px;*/
+    padding: 10px;
     border-radius: 5px;
     border: 1.2px solid #c4cae0;
-    /*margin-top: 5px;*/
+    margin-top: 5px;
 }
 
 textarea{
@@ -40,15 +46,10 @@ textarea{
 
 body{
     margin: 0px;
-    background: linear-gradient(
-            135deg,
-            #6f6df4,
-            #4c46f5
-    );
+    background: linear-gradient(135deg,#6f6df4,#4c46f5);
 }
 
 p{
-    /*position: relative;*/
     margin: auto;
     width: 100%;
 }
@@ -59,8 +60,6 @@ form{
     border-radius: 10px;
     box-shadow: 20px 30px 25px rgba(0,0,0,0.15);
     width: 80%;
-    /*position: relative;
-    margin: 30px auto 0 auto;*/
 }
 
 .skin{
@@ -68,9 +67,6 @@ form{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    /*position: absolute;
-    left: 10%;
-    top: 30%;*/
 
 }
 
@@ -79,14 +75,7 @@ footer {
     margin-top: auto;
 }
 
-/*{
-    box-sizing: border-box;
-}*/
-
-/*textarea:focus,
-input:focus{
-    outline: none;
-    border-color: #6f6df4;
+progress{
+    width: 100%;
+    height: 2.5em;
 }
-
- */
