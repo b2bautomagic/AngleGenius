@@ -148,6 +148,12 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
     background-color: #1c7ac0;
     border-radius: 1.5em;
+}
+
+progress::-moz-progress-bar{
+    background-color: #1c7ac0;
+    border-radius: 1.5em;
+}
 
 fields1{
    align-content: center;
