@@ -8,9 +8,58 @@
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-    align-self: center;
+
+}
+
+.next{
+    border: none;
+    background-color: #0071e3;
+    color: white;
+    box-shadow: inset -5px -5px 10px rgba(0,0,0,0.2) inset 5px 5px 10px rgba(255,255,255,0.2), -5px -5px 10px rgba(0,0,0,0.2), 5px 5px 10px rgba(255,255,255,0.2);
+
+}
+
+.next:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+.next:active {
+    transform: scale(0.9);
+}
+
+.prev{
+    margin-bottom: 5px;
+    border: none;
+    background-color: #4c3a6a;
+    color: white;
+    box-shadow: inset -5px -5px 10px rgba(0,0,0,0.2) inset 5px 5px 10px rgba(255,255,255,0.2), -5px -5px 10px rgba(0,0,0,0.2), 5px 5px 10px rgba(255,255,255,0.2);
+}
+
+.prev:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.prev:active {
+    transform: scale(0.9);
+}
+
+.sub{
+    background-color: dodgerblue;
+    color: white;
+    box-shadow: inset -5px -5px 10px rgba(0,0,0,0.2) inset 5px 5px 10px rgba(255,255,255,0.2), -5px -5px 10px rgba(0,0,0,0.2), 5px 5px 10px rgba(255,255,255,0.2);
+}
+
+.sub:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.sub:active {
+    transform: scale(0.9);
 }
 
 header {
@@ -21,6 +70,7 @@ header {
 
 h3{
     text-align: center;
+    font-family: verdana;
 }
 
 section {
@@ -40,6 +90,8 @@ textarea,input{
 
 textarea{
     resize: none;
+    width: 70%;
+    margin-bottom: 25px;
 }
 
 body{
@@ -73,7 +125,30 @@ footer {
     margin-top: auto;
 }
 
-progress{
+.progress{
+
+
+    /*margin: 50px auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(-30deg);*/
+}
+progress {
+    -webkit-appearance: none;
     width: 100%;
-    height: 2.5em;
+    height: 35px;
+    border-radius: 1.5em;
+    margin-top: 15px;
+}
+
+progress::-webkit-progress-bar {
+    border-radius: 1.5em;
+    background-color: #bbb;
+}
+
+progress::-webkit-progress-value {
+    background-color: #1c7ac0;
+    border-radius: 1.5em;
+
+fields1{
+   align-content: center;
 }

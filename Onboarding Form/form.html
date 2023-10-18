@@ -20,7 +20,7 @@
 
                 <h3>Contact Info</h3>
 
-                <section class="fields">
+                <section class="fields fields1">
                     <p><input placeholder="Your first name" type="text"></input></p>
                     <p><input placeholder="Your last name" type="text"></input></p>
                     <p><input placeholder="Company name" type="text"></input></p>
@@ -29,10 +29,10 @@
                 </section>
 
                 <div class="step-buttons">
-                    <button type="button" onclick="nextStep(2)">Next</button>
+                    <button class="next" type="button" onclick="nextStep(2)">Next</button>
                 </div>
 
-                <progress max="100" value="16.6"></progress>
+                <progress class="progress-bar" max="100" value="16.6"></progress>
 
             </div>
 
@@ -53,8 +53,8 @@
                 </section>
 
                 <div class="step-buttons">
-                    <button type="button" onclick="nextStep(1)">Previous</button>
-                    <button type="button" onclick="nextStep(3)">Next</button>
+                    <button class="prev" type="button" onclick="nextStep(1)">Previous</button>
+                    <button class="next" type="button" onclick="nextStep(3)" class="prev">Next</button>
                 </div>
 
                 <progress max="100" value="33.26"></progress>
@@ -79,8 +79,8 @@
                 </section>
 
                 <div class="step-buttons">
-                    <button type="button" onclick="nextStep(2)">Previous</button>
-                    <button type="button" onclick="nextStep(4)">Next</button>
+                    <button class="prev" type="button" onclick="nextStep(2)">Previous</button>
+                    <button class="next" type="button" onclick="nextStep(4)">Next</button>
                 </div>
 
                 <progress max="100" value="49.92"></progress>
@@ -104,8 +104,8 @@
                 </section>
 
                 <div class="step-buttons">
-                    <button type="button" onclick="nextStep(3)">Previous</button>
-                    <button type="button" onclick="nextStep(5)">Next</button>
+                    <button class="prev" type="button" onclick="nextStep(3)">Previous</button>
+                    <button class="next" type="button" onclick="nextStep(5)">Next</button>
                 </div>
 
                 <progress max="100" value="66.58"></progress>
@@ -123,8 +123,8 @@
                 </section>
 
                 <div class="step-buttons">
-                    <button type="button" onclick="nextStep(4)">Previous</button>
-                    <button type="button" onclick="nextStep(6)">Next</button>
+                    <button class="prev" type="button" onclick="nextStep(4)">Previous</button>
+                    <button class="next" type="button" onclick="nextStep(6)">Next</button>
                 </div>
 
                 <progress max="100" value="83.246"></progress>
@@ -141,8 +141,8 @@
                 </section>
 
                 <div class="step-buttons">
-                    <button type="button" onclick="nextStep(5)">Previous</button>
-                    <input type="submit" value="Submit">
+                    <button class="prev" type="button" onclick="nextStep(5)">Previous</button>
+                    <input class="sub" type="submit" value="Submit">
                 </div>
 
                 <progress max="100" value="100"></progress>
